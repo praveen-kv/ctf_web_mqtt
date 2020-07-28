@@ -1,0 +1,14 @@
+version: '3'
+services:
+    mqtt:
+        image: toke/mosquitto:latest
+        ports:
+            - "1883:1883"
+    web_app:
+        image: abhyadan/ctf8_mqtt:latest
+        ports:
+            - "9443:9443"
+    mqtt_pub:
+        image: abhyadan/ctf8_mqtt_py:latest
+        links:
+            - mqtt
