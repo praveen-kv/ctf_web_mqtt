@@ -20,3 +20,6 @@ Download the *docker-compose.yml* file and the run the following command from th
 Upon running the docker images using the yml file, access the Web Application at http://Your_IP:9443
 
 _Note: Start your journey through Web Application._
+
+
+Use `flush_docker.sh` to Stop and Remove all the containers which running.
